@@ -6,9 +6,9 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-
+  ruby 3.2.2
 * System dependencies
-
+  
 * Configuration
 
 * Database creation

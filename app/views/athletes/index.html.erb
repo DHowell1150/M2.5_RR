@@ -1,0 +1,9 @@
+<h1> Athletes </h1>
+
+<% @athletes.each do |athlete| %>
+<div id=<%="athlete-#{athlete.id}" %>>
+  <h3> <%= athlete.name %> </h3>
+  <p> <%= athlete.age %> </p>
+  <p> <%= athlete.collegiate_athlete? %> </p>
+</div>
+<% end %>

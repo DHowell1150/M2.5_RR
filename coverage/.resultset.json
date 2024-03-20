@@ -258,6 +258,10 @@
           null,
           1,
           null,
+          1,
+          1,
+          null,
+          1,
           null,
           null,
           null
@@ -269,10 +273,76 @@
           null
         ]
       },
-      "/Users/danahowell/turing/2mod/projects/M2.5_relational_rails/m2.5_relational_rails/app/models/athlete.rb": {
+      "/Users/danahowell/turing/2mod/projects/M2.5_relational_rails/m2.5_relational_rails/app/helpers/athletes_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/danahowell/turing/2mod/projects/M2.5_relational_rails/m2.5_relational_rails/app/helpers/gyms_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/danahowell/turing/2mod/projects/M2.5_relational_rails/m2.5_relational_rails/spec/features/gyms/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/danahowell/turing/2mod/projects/M2.5_relational_rails/m2.5_relational_rails/spec/features/gyms/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/danahowell/turing/2mod/projects/M2.5_relational_rails/m2.5_relational_rails/app/models/gym.rb": {
         "lines": [
           1,
           1,
+          null,
+          1,
+          1,
+          0,
+          null,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -283,25 +353,50 @@
           null
         ]
       },
-      "/Users/danahowell/turing/2mod/projects/M2.5_relational_rails/m2.5_relational_rails/spec/models/gym_spec.rb": {
+      "/Users/danahowell/turing/2mod/projects/M2.5_relational_rails/m2.5_relational_rails/app/models/athlete.rb": {
         "lines": [
+          1,
           1,
           null,
           1,
-          1,
           2,
+          1,
+          null,
+          1,
+          null,
           null,
           null
         ]
       },
-      "/Users/danahowell/turing/2mod/projects/M2.5_relational_rails/m2.5_relational_rails/app/models/gym.rb": {
+      "/Users/danahowell/turing/2mod/projects/M2.5_relational_rails/m2.5_relational_rails/app/controllers/athletes_controller.rb": {
         "lines": [
           1,
           1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/danahowell/turing/2mod/projects/M2.5_relational_rails/m2.5_relational_rails/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/danahowell/turing/2mod/projects/M2.5_relational_rails/m2.5_relational_rails/app/controllers/gyms_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1710819306
+    "timestamp": 1710946535
   }
 }
