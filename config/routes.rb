@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   get "/gyms", to: "gyms#index"
+  get "/gyms/new", to: "gyms#new"
   get "/gyms/:id", to: "gyms#show"
+  post "/gyms", to: "gyms#create"
+
+
   get "/gyms/:id/gym_athletes", to: "gym_athletes#index"
 
 

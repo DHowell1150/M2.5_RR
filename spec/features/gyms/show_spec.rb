@@ -35,5 +35,7 @@ RSpec.describe 'Gym Show page', type: :feature do
       click_link "Athletes"
       expect(current_path).to eq("/gyms/#{@slccf.id}/gym_athletes")
     end
+
+    
   end
 end

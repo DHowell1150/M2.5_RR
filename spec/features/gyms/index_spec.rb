@@ -19,13 +19,42 @@ RSpec.describe 'Gym Index page', type: :feature do
     end
 
 
-# US6 
+    # US6 
     it "sorts gyms by Most Recently Created" do
       visit "/gyms"
       expect(@v23.name).to appear_before(@alpine.name)
       expect(@alpine.name).to appear_before(@slccf.name)
     end
-# I see that records are ordered by most recently created first
-# And next to each of the records I see when it was created
+
+    it 'links to the new page from gym index' do
+      visit "/gyms"
+      expect(page).to have_link("New Gym")
+      # When I click this link
+      click_link "New Gym"
+      # Then I am taken to '/parents/new' where I  see a form for a new parent record
+      expect(current_path).to eq("/gyms/new")
+    end
+
+    it 'creates form for new gym ' do
+      visit "/gyms/new"
+      # expect(current_path).to eq("/gyms/new")
+      # When I fill out the form with a new parent's attributes:
+      fill_in :name, with: "Applewood Crossfit"
+      fill_in "bikes", with: "6"
+      fill_in "outdoor_space", with: "false"
+  
+      # And I click the button "Create Parent" to submit the form
+      click_on "Create Gym"
+      
+      # Then a `POST` request is sent to the '/parents' route,
+      # a new parent record is created,
+      new_gym = Gym.last
+      
+      # and I am redirected to the Parent Index page where I see the new Parent displayed.
+      expect(current_path).to eq("/gyms")
+      expect(page).to have_content("#{new_gym.name}")
+      expect(page).to have_content("#{new_gym.num_bikes}")
+      # expect(page).to have_content("#{new_gym.outdoor_space?}")
+    end
   end
 end
