@@ -5,17 +5,27 @@ application up and running.
 
 Things you may want to cover:
 
+* Refactor wish list
+  - If statement in view for model boolean method US3
+  - US6 appear before.  Is this correct? It seems to know when it's created as to how it's ordered in my `before` block, not necessarily `created_at`
+
+
+
 * Ruby version
   ruby 3.2.2
+
 * System dependencies
   
 * Configuration
 
 * Database creation
+  `rails g model TableName col1:datatype col2:datatype child_table:references`
 
 * Database initialization
 
 * How to run the test suite
+  berm
+  berf
 
 * Services (job queues, cache servers, search engines, etc.)
 

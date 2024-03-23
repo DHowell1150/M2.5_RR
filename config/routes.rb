@@ -7,8 +7,14 @@ Rails.application.routes.draw do
 
   get "/gyms", to: "gyms#index"
   get "/gyms/:id", to: "gyms#show"
+  get "/gyms/:id/gym_athletes", to: "gym_athletes#index"
+
 
   get "/athletes", to: "athletes#index"
+  get "/athletes/:id", to: "athletes#show"
+
+  # get "/gyms/:gym_id/athletes", to: "gym_athletes#index", as: "gym_athletes"
+  get "/gyms/:gym_id/gym_athletes", to: "gym_athletes#index"
   # Defines the root path route ("/")
   # root "posts#index"
 end

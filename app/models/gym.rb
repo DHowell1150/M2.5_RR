@@ -8,4 +8,8 @@ class Gym < ApplicationRecord
       "Does Not Have Outdoor Space"
     end
   end
+
+  def athlete_count
+    athletes.count
+  end
 end

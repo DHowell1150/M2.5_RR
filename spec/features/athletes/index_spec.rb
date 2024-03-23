@@ -12,7 +12,6 @@ RSpec.describe 'Athlete Index Page', type: :feature do
     #US3
     it 'displays athlete name, age, collegiate_athlete status.' do
       visit "/athletes"
-
       within "#athlete-#{@corinna.id}" do
         expect(page).to have_content(@corinna.name)
         expect(page).to have_content(@corinna.age)
