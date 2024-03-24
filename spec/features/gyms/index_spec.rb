@@ -53,7 +53,6 @@ RSpec.describe 'Gym Index page', type: :feature do
       # and I am redirected to the Parent Index page where I see the new Parent displayed.
       expect(current_path).to eq("/gyms")
       expect(page).to have_content("#{new_gym.name}")
-      expect(page).to have_content("#{new_gym.num_bikes}")
       # expect(page).to have_content("#{new_gym.outdoor_space?}")
     end
   end

@@ -4,4 +4,5 @@
 <p> <%= @gym.outdoor_space_method %></p>  
 <p> Number of Athletes: <%= @gym.athlete_count %></p>  
 
-<%= link_to 'Athletes', "/gyms/#{@gym.id}/gym_athletes" %>
+<%= link_to 'Athletes', "/gyms/#{@gym.id}/gym_athletes" %> <br>
+<%= link_to 'Update Gym', "/gyms/#{@gym.id}/edit" %>

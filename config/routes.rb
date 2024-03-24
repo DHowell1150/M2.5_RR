@@ -8,17 +8,18 @@ Rails.application.routes.draw do
   get "/gyms", to: "gyms#index"
   get "/gyms/new", to: "gyms#new"
   get "/gyms/:id", to: "gyms#show"
+  get "/gyms/:id/edit", to: "gyms#edit"
   post "/gyms", to: "gyms#create"
 
 
+#Delete one of these once all tests are passing to confirm which one
   get "/gyms/:id/gym_athletes", to: "gym_athletes#index"
+  get "/gyms/:gym_id/gym_athletes", to: "gym_athletes#index"
 
 
   get "/athletes", to: "athletes#index"
   get "/athletes/:id", to: "athletes#show"
 
-  # get "/gyms/:gym_id/athletes", to: "gym_athletes#index", as: "gym_athletes"
-  get "/gyms/:gym_id/gym_athletes", to: "gym_athletes#index"
   # Defines the root path route ("/")
   # root "posts#index"
 end

@@ -11,7 +11,15 @@ class GymsController < ApplicationController
   end
   
   def create
-    new_gym = Gym.create!(name: params[:name], num_bikes: params[:num_bikes], outdoor_space: params[:outdoor_space])
+    new_gym = Gym.create!(new_gym_params)
     redirect_to"/gyms"
+  end
+
+  def edit
+    @gym = Gym.find(params[:id])
+  end
+
+  def new_gym_params
+    params.permit(:name, :num_bikes, :outdoor_space)
   end
 end
