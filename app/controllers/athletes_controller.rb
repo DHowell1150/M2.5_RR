@@ -6,4 +6,12 @@ class AthletesController < ApplicationController
   def show
     @athlete = Athlete.find(params[:id])
   end
+
+  def edit
+    @athlete = Athlete.find(params[:id])
+  end
+
+  def update
+
+  end
 end

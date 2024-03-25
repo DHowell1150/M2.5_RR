@@ -12,13 +12,14 @@ Rails.application.routes.draw do
   post "/gyms", to: "gyms#create"
 
 
-#Delete one of these once all tests are passing to confirm which one
   get "/gyms/:id/gym_athletes", to: "gym_athletes#index"
-  get "/gyms/:gym_id/gym_athletes", to: "gym_athletes#index"
+  get "/gyms/:id/gym_athletes/new", to: "gym_athletes#new"
+  post "/gyms/:id/gym_athletes", to: "gym_athletes#create"
 
 
   get "/athletes", to: "athletes#index"
   get "/athletes/:id", to: "athletes#show"
+  get "/athletes/:id/edit", to: "athletes#edit"
 
   # Defines the root path route ("/")
   # root "posts#index"

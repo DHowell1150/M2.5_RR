@@ -36,6 +36,7 @@ RSpec.describe 'Gym Show page', type: :feature do
       expect(current_path).to eq("/gyms/#{@slccf.id}/gym_athletes")
     end
 
+    
     it 'displays link to update gym' do
       visit "/gyms/#{@slccf.id}"
 
@@ -47,7 +48,6 @@ RSpec.describe 'Gym Show page', type: :feature do
 
     it "has form to update gym" do
       visit ("/gyms/#{@slccf.id}/edit")
-      save_and_open_page
       # When I fill out the form with updated information
       fill_in :name, with: "Salt Lake City Athletics"
       fill_in :num_bikes, with: "16"

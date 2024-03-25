@@ -8,6 +8,8 @@ Things you may want to cover:
 * Must go back to
   - boolean in show and index_spec for updating form (show: 54, 18)
   index: 44, 56
+  gym_athlete index_spec: 54
+  
 * Refactor wish list
   - If statement in view for model boolean method US3
   - US6 appear before.  Is this correct? It seems to know when it's created as to how it's ordered in my `before` block, not necessarily `created_at`

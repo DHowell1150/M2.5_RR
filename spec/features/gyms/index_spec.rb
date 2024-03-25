@@ -26,6 +26,7 @@ RSpec.describe 'Gym Index page', type: :feature do
       expect(@alpine.name).to appear_before(@slccf.name)
     end
 
+    # US 11 Gym creation
     it 'links to the new page from gym index' do
       visit "/gyms"
       expect(page).to have_link("New Gym")
@@ -35,7 +36,7 @@ RSpec.describe 'Gym Index page', type: :feature do
       expect(current_path).to eq("/gyms/new")
     end
 
-    it 'creates form for new gym ' do
+    it 'has form for new gym ' do
       visit "/gyms/new"
       # expect(current_path).to eq("/gyms/new")
       # When I fill out the form with a new parent's attributes:

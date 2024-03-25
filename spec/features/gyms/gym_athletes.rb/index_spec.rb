@@ -14,7 +14,7 @@ RSpec.describe 'gym_athletes index page', type: :feature do
       end
 
       #US 5 
-      it 'displays' do
+      it 'displays gyms athletes and thier attributes' do
         # When I visit '/parents/:parent_id/child_table_name'
         visit "/gyms/#{@alpine.id}/gym_athletes"
         # visit gym_athletes_path(gym_id: @alpine.id)
@@ -30,6 +30,29 @@ RSpec.describe 'gym_athletes index page', type: :feature do
           expect(page).to have_content(@megan.age)
           expect(page).to have_content(@megan.collegiate_athlete?)
         end
+      end
+
+      # US13 Parent Child Creation
+      it 'has link to add a new athlete' do
+        visit "/gyms/#{@slccf.id}/gym_athletes"
+        expect(page).to have_link("Add Athlete")
+
+        click_link "Add Athlete"
+
+        expect(current_path).to eq("/gyms/#{@slccf.id}/gym_athletes/new")
+      end
+      
+      it "has form to create new athlete" do
+        visit "/gyms/#{@slccf.id}/gym_athletes/new"
+        fill_in :name, with: "Jamie Dodge"
+        fill_in :age, with: "50"
+        # fill_in :collegiate_athlete, with: "false"
+
+        click_on "Add Athlete"
+
+        new_gym_athlete = @slccf.athletes.last
+        expect(current_path).to eq("/gyms/:id/gym_athletes")
+        expect(page).to have_content("Jamie Dodge")
       end
     end 
   end

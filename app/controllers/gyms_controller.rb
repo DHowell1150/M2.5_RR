@@ -11,7 +11,7 @@ class GymsController < ApplicationController
   end
   
   def create
-    new_gym = Gym.create!(new_gym_params)
+    @new_gym = Gym.create!(new_gym_params)
     redirect_to"/gyms"
   end
 

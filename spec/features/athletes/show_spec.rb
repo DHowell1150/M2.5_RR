@@ -15,6 +15,27 @@ RSpec.describe 'Athlete Show Page', type: :feature do
         expect(page).to have_content(@corinna.age)
         expect(page).to have_content("No College Athletics")
       end
+
+      # US14
+      it 'has a link to update' do
+        # When I visit a Child Show page
+        visit "/athletes/#{@corinna.id}"
+        # Then I see a link to update that Child "Update Child"
+        expect(page).to have_link("Update Athlete")
+        # When I click the link
+        click_link "Update Athlete"
+        # I am taken to '/child_table_name/:id/edit' where I see a form to edit the child's attributes:
+        expect(current_path).to eq("/athletes/#{@corinna.id}/edit")
+      end
+      it 'Can update athlete' do
+        visit "/athletes/#{@corinna.id}"
+        # When I click the button to submit the form "Update Child"
+        click_on "Update Athlete"
+        # Then a `PATCH` request is sent to '/child_table_name/:id',
+        # the child's data is updated,
+        # and I am redirected to the Child Show page where I see the Child's updated information
+        expect(current_path).to eq("/athletes/#{@corinna.id}/edit")
+      end
     end 
   end
 end
