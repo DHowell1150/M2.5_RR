@@ -8,4 +8,8 @@ class Athlete < ApplicationRecord
       "No College Athletics"
     end
   end
+
+  def self.college_athlete
+    Athlete.where("collegiate_athlete = true")
+  end
 end

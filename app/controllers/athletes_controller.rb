@@ -1,6 +1,6 @@
 class AthletesController < ApplicationController
   def index 
-    @athletes = Athlete.all
+    @athletes = Athlete.college_athlete
   end
 
   def show

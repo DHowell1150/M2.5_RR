@@ -10,19 +10,27 @@ RSpec.describe 'Athlete Index Page', type: :feature do
     end
 
     #US3
-    it 'displays athlete name, age, collegiate_athlete status.' do
-      visit "/athletes"
-      within "#athlete-#{@corinna.id}" do
-        expect(page).to have_content(@corinna.name)
-        expect(page).to have_content(@corinna.age)
-        expect(page).to have_content("No College Athletics")
-      end
+    # it 'displays athlete name, age, collegiate_athlete status.' do
+    #   visit "/athletes"
+    #   within "#athlete-#{@corinna.id}" do
+    #     expect(page).to have_content(@corinna.name)
+    #     expect(page).to have_content(@corinna.age)
+    #     expect(page).to have_content("No College Athletics")
+    #   end
 
-      within "#athlete-#{@nick.id}" do
-        expect(page).to have_content(@nick.name)
-        expect(page).to have_content(@nick.age)
-        expect(page).to have_content("Collegiate Athlete")
-      end
+    #   within "#athlete-#{@nick.id}" do
+    #     expect(page).to have_content(@nick.name)
+    #     expect(page).to have_content(@nick.age)
+    #     expect(page).to have_content("Collegiate Athlete")
+    #   end
+    # end
+
+  #  US15 Display only collegiate athletes
+    it 'displays only athletes who were collegiate athletes' do
+      visit "/athletes"
+
+      expect(page).to have_content(@nick.name)
+      expect(page).not_to have_content(@corinna.name)
     end
   end
 end

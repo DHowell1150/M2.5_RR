@@ -51,7 +51,9 @@ RSpec.describe 'Gym Show page', type: :feature do
       # When I fill out the form with updated information
       fill_in :name, with: "Salt Lake City Athletics"
       fill_in :num_bikes, with: "16"
-      fill_in :outdoor_space, with: "Does Not Have Outdoor Space"
+      # fill_in :before, with: "Does Not Have Outdoor Space"
+      choose("outdoor_space_false")
+      
       # And I click the button to submit the form
       click_on "Update"
       # Then a `PATCH` request is sent to '/parents/:id',

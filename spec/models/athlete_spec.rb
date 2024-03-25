@@ -16,4 +16,10 @@ RSpec.describe Athlete, type: :model do
     expect(@nick.collegiate_athlete?).to eq("Collegiate Athlete")
     end
   end
+
+  # describe "Class methods" do
+  #   it '#college_athlete' do
+  #     expect(@corinna.college_athlete).to eq(true)
+  #   end
+  # end
 end

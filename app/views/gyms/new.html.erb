@@ -2,13 +2,22 @@
 
 <%= form_with url: "/gyms", method: :post, local: true do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name %><br>
 
   <%= f.label :num_bikes %>
-  <%= f.text_field :num_bikes %>
+  <%= f.text_field :num_bikes %><br>
 
-  <%= f.label :outdoor_space %>
-  <%= f.text_field :outdoor_space %>
+  Outdoor Space :
+  <%= f.label :outdoor_space_yes, "Yes" %>
+  <%= f.radio_button :outdoor_space, "true" %>  
+  
+  <%= f.label :outdoor_space_no, "No" %>
+  <%= f.radio_button :outdoor_space, "false" %><br>
+
 
   <%= f.submit "Create Gym"%>
 <% end %>
+
+
+
+
