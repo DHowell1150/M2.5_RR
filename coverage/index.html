@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-03-26T06:23:44-06:00">2024-03-26T06:23:44-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-03-26T08:44:22-06:00">2024-03-26T08:44:22-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  98.05%
+  95.88%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.31
+         1.28
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>257</b> relevant lines,
-    <span class="green"><b>252</b> lines covered</span> and
-    <span class="red"><b>5</b> lines missed. </span>
+    <b>267</b> relevant lines,
+    <span class="green"><b>256</b> lines covered</span> and
+    <span class="red"><b>11</b> lines missed. </span>
     (<span class="green">
-  98.05%
+  95.88%
 </span>
 )
   </div>
@@ -110,7 +110,7 @@
             <td class="cell--number">13</td>
             <td class="cell--number">13</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.62</td>
+            <td class="cell--number">1.69</td>
             
           </tr>
         
@@ -358,12 +358,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#7cd3792a747136868aa658c22f5a908e9d213353" class="src_link" title="spec/features/gyms/index_spec.rb">spec/features/gyms/index_spec.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">97.22 %</td>
-            <td class="cell--number">70</td>
-            <td class="cell--number">36</td>
-            <td class="cell--number">35</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">1.31</td>
+            <td class="yellow strong cell--number t-file__coverage">84.78 %</td>
+            <td class="cell--number">78</td>
+            <td class="cell--number">46</td>
+            <td class="cell--number">39</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">1.11</td>
             
           </tr>
         
@@ -1131,8 +1131,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="19">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="3" data-linenumber="19">
+            <span class="hits">3</span>
             
 
             
@@ -6474,8 +6474,8 @@
   <div class="header">
     <h3>spec/features/gyms/index_spec.rb</h3>
     <h4>
-      <span class="green">
-  97.22%
+      <span class="yellow">
+  84.78%
 </span>
 
       lines covered
@@ -6484,9 +6484,9 @@
     
 
     <div class="t-line-summary">
-      <b>36</b> relevant lines.
-      <span class="green"><b>35</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <b>46</b> relevant lines.
+      <span class="green"><b>39</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
     </div>
 
     
@@ -7053,7 +7053,7 @@
 
             
 
-            <code class="ruby">      # expect(page).to have_content(&quot;#{new_gym.outdoor_space?}&quot;)</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -7064,7 +7064,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -7075,23 +7075,12 @@
 
             
 
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="54">
-            
-            
-
-            
-
             <code class="ruby">    # US17 update link</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="55">
+          <li class="covered" data-hits="1" data-linenumber="54">
             <span class="hits">1</span>
             
 
@@ -7102,7 +7091,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="56">
+          <li class="covered" data-hits="1" data-linenumber="55">
             <span class="hits">1</span>
             
 
@@ -7113,7 +7102,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
+          <li class="never" data-hits="" data-linenumber="56">
             
             
 
@@ -7124,13 +7113,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
             
+
+            
+
+            <code class="ruby">      within &quot;#gym-#{@slccf.id}&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="58">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      # Next to every parent, I see a link to edit that parent&#39;s info</code>
+            <code class="ruby">        expect(page).to have_link(&quot;Update #{@slccf.name}&quot;)</code>
           </li>
         </div>
       
@@ -7141,18 +7141,18 @@
 
             
 
-            <code class="ruby">      expect(page).to have_link(&quot;Update Gym&quot;)</code>
+            <code class="ruby">        click_link &quot;Update #{@slccf.name}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="60">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="60">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">        expect(current_path).to eq(&quot;/gyms/#{@slccf.id}/edit&quot;)</code>
           </li>
         </div>
       
@@ -7163,7 +7163,7 @@
 
             
 
-            <code class="ruby">      # When I click the link</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -7174,29 +7174,29 @@
 
             
 
-            <code class="ruby">      click_link &quot;Update Gym&quot;</code>
+            <code class="ruby">save_and_open_page</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="63">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="63">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      within &quot;#gym-#{@alpine.id}&quot; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="64">
+          <li class="missed" data-hits="0" data-linenumber="64">
             
             
 
             
 
-            <code class="ruby">      # I should be taken to that parent&#39;s edit page where I can update its information just like in User Story 12</code>
+            <code class="ruby">        expect(page).to have_link(&quot;Update #{@alpine.name}&quot;)</code>
           </li>
         </div>
       
@@ -7207,18 +7207,18 @@
 
             
 
-            <code class="ruby">      expect(current_path).to eq(&quot;/gyms/#{@sclccf.id}/edit&quot;)</code>
+            <code class="ruby">        click_link &quot;Update #{@alpine.name}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="66">
+          <li class="missed" data-hits="0" data-linenumber="66">
             
             
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">        expect(current_path).to eq(&quot;/gyms/#{@alpine.id}/edit&quot;)</code>
           </li>
         </div>
       
@@ -7229,7 +7229,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -7240,12 +7240,100 @@
 
             
 
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="69">
+            
+            
+
+            
+
+            <code class="ruby">      within &quot;#gym-#{@v23.id}&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="70">
+            
+            
+
+            
+
+            <code class="ruby">        expect(page).to have_link(&quot;Update #{@v23.name}&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby">        click_link &quot;Update #{@v23.name}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="72">
+            
+            
+
+            
+
+            <code class="ruby">        expect(current_path).to eq(&quot;/gyms/#{@v23.id}/edit&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="73">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="74">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="75">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="76">
+            
+            
+
+            
+
             <code class="ruby">end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="69">
+          <li class="never" data-hits="" data-linenumber="77">
             
             
 
@@ -7256,7 +7344,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="70">
+          <li class="never" data-hits="" data-linenumber="78">
             
             
 

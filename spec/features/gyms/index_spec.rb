@@ -48,21 +48,31 @@ RSpec.describe 'Gym Index page', type: :feature do
       expect(current_path).to eq("/gyms")
       expect(new_gym.name).to eq("Applewood Crossfit")
       expect(page).to have_content("#{new_gym.name}")
-      # expect(page).to have_content("#{new_gym.outdoor_space?}")
     end
 
     # US17 update link
     it 'has a link next to each gym' do
       visit ("/gyms")
 
-      # Next to every parent, I see a link to edit that parent's info
-      expect(page).to have_link("Update Gym")
+      within "#gym-#{@slccf.id}" do
+        expect(page).to have_link("Update #{@slccf.name}")
+        click_link "Update #{@slccf.name}"
+        expect(current_path).to eq("/gyms/#{@slccf.id}/edit")
+      end
+      visit ("/gyms")
 
-      # When I click the link
-      click_link "Update Gym"
-
-      # I should be taken to that parent's edit page where I can update its information just like in User Story 12
-      expect(current_path).to eq("/gyms/#{@sclccf.id}/edit")
+      within "#gym-#{@alpine.id}" do
+        expect(page).to have_link("Update #{@alpine.name}")
+        click_link "Update #{@alpine.name}"
+        expect(current_path).to eq("/gyms/#{@alpine.id}/edit")
+      end
+      visit ("/gyms")
+      
+      within "#gym-#{@v23.id}" do
+        expect(page).to have_link("Update #{@v23.name}")
+        click_link "Update #{@v23.name}"
+        expect(current_path).to eq("/gyms/#{@v23.id}/edit")
+      end
     end
   end
 end

@@ -5,5 +5,6 @@
   <h3> <%= athlete.name %> </h3>
   <p> Age: <%= athlete.age %> </p>
   <p> <%= athlete.collegiate_athlete? %> </p>
+  <%= link_to 'Update Athlete', "/athletes/#{athlete.id}/edit" %>
 </div>
 <% end %>
