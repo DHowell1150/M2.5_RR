@@ -16,6 +16,7 @@ Gym.destroy_all
 
 @corinna = @slccf.athletes.create!(name: "Corinna", age: 26, collegiate_athlete: false)
 @nick = @slccf.athletes.create!(name: "Nick", age: 19, collegiate_athlete: true)
+@jamie = @slccf.athletes.create!(name: "Jamie", age: 47, college_athlete: true)
 @annie = @alpine.athletes.create!(name: "Annie", age: 32, collegiate_athlete: true)
 @megan = @alpine.athletes.create!(name: "Megan", age: 36, collegiate_athlete: false)
 @beau = @alpine.athletes.create!(name: "Beau", age: 41, collegiate_athlete: true)

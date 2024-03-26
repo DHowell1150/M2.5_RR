@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe Gym, type: :model do
   describe 'relations' do
     it {should have_many :athletes}
+    # it {should have_many :gym_athletes}
   end
 
   describe "instance methods" do

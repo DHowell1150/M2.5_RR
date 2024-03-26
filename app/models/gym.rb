@@ -1,5 +1,6 @@
 class Gym < ApplicationRecord
   has_many :athletes
+  # has_many :gym_athletes
 
   def outdoor_space_method
     if outdoor_space

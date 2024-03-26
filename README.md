@@ -9,6 +9,11 @@ Things you may want to cover:
 
 2. do I need to model test self.college_athlete? 
 
+3. US 16.  For model method gym_athletes_sorted, do I make and write in gym_athlete_spec.rb  or do I nest it spec/models/gym/athlete/index_spec.rb
+
+4. line 16b of spec/models/gym_athlete_spec.rb
+Am I supposed to use `appear_before` or have it as is
+
 * Must go back to
   - boolean in show and index_spec for updating form (show: 54, 18)
   index: 44, 56
@@ -17,6 +22,7 @@ Things you may want to cover:
 * Refactor wish list
   - If statement in view for model boolean method US3
   - US6 appear before.  Is this correct? It seems to know when it's created as to how it's ordered in my `before` block, not necessarily `created_at`
+  - app/models/athlete.rb describe instance and class method blocks
 
 
 
