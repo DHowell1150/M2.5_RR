@@ -2,7 +2,8 @@
 
 <% @gyms.order(created_at: :desc).each do |gym| %>
 <div id=<%="gym-#{gym.id}" %>>
-  <h3> <%= gym.name %> <%= link_to "Update #{gym.name}", "/gyms/#{gym.id}/edit" %></h3>
+  <h3> <%= gym.name %> 
+  <%= link_to "Update #{gym.name}", "/gyms/#{gym.id}/edit" %></h3>
 </div>
 <% end %>
 

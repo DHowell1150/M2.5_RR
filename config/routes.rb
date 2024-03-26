@@ -12,9 +12,10 @@ Rails.application.routes.draw do
   post "/gyms", to: "gyms#create"
 
 
-  get "/gyms/:id/gym_athletes", to: "gym_athletes#index"
-  get "/gyms/:id/gym_athletes/new", to: "gym_athletes#new"
-  post "/gyms/:id/gym_athletes", to: "gym_athletes#create"
+  get "/gyms/:id/athletes", to: "gym_athletes#index"
+  get "/gyms/:id/athletes/edit", to: "gym_athletes#edit"
+  get "/gyms/:id/athletes/new", to: "gym_athletes#new"
+  post "/gyms/:id/athletes", to: "gym_athletes#create"
 
 
   get "/athletes", to: "athletes#index"

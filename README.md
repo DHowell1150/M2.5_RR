@@ -1,9 +1,11 @@
 # README
+TO SEE TABLES, ` open active_designer/index.html` in terminal
+
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
 * Questions:
 1. spec/athletes/index_spec.rb it block line 13/29. Can I override 13 or simply comment out? 
 
@@ -25,6 +27,7 @@ Am I supposed to use `appear_before` or have it as is
   - app/models/athlete.rb describe instance and class method blocks
 
 
+Things you may want to cover:
 
 * Ruby version
   ruby 3.2.2
@@ -34,13 +37,10 @@ Am I supposed to use `appear_before` or have it as is
 * Configuration
 
 * Database creation
-  `rails g model TableName col1:datatype col2:datatype child_table:references`
 
 * Database initialization
 
 * How to run the test suite
-  berm
-  berf
 
 * Services (job queues, cache servers, search engines, etc.)
 
