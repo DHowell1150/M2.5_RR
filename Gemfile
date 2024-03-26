@@ -46,6 +46,7 @@ gem "bootsnap", require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+<<<<<<< HEAD
   gem "capybara"
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "factory_bot_rails"
@@ -56,6 +57,9 @@ group :development, :test do
   gem "rspec-rails"
   gem "shoulda-matchers"
   gem "simplecov"
+=======
+  gem "debug", platforms: %i[ mri windows ]
+>>>>>>> adc9e0518f351d7e78aaa8ea09b42d14c7686f7d
 end
 
 group :development do
