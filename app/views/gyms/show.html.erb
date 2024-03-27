@@ -1,0 +1,8 @@
+<h1> <%= @gym.name  %> </h1>
+
+<p> Number of Bikes: <%= @gym.num_bikes %></p>  
+<p> <%= @gym.outdoor_space_method %></p>  
+<p> Number of Athletes: <%= @gym.athlete_count %></p>  
+
+<%= link_to 'Athletes', "/gyms/#{@gym.id}/athletes" %> <br>
+<%= link_to 'Update Gym', "/gyms/#{@gym.id}/edit" %>

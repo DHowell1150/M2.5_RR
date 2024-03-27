@@ -1,0 +1,17 @@
+<h1> Update Gym </h1>
+
+<%= form_with url: "/gym/#{@gym.id}/edit", method: :patch do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %> <br>
+
+  <%= f.label :num_bikes %>
+  <%= f.text_field :num_bikes %><br>
+
+  <%= f.label :outdoor_space_yes, "Yes" %>
+  <%= f.radio_button :outdoor_space, "true" %>
+  <%= f.label :outdoor_space_no, "No" %>
+  <%= f.radio_button :outdoor_space, "false" %>
+
+
+  <%= f.submit "Update #{@gym.name}"%>
+<% end %>

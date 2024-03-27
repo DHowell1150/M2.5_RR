@@ -1,0 +1,11 @@
+<h1> <%= @gym.name %>'s Athletes  </h1>
+
+<h3><% @athletes.each do |athlete| %> </h3>
+  <div id="athlete-<%= athlete.id %>">
+    <h3> <%= athlete.name %> </h3>
+    <p>Age: <%= athlete.age %> </p>
+    <p> <%= athlete.collegiate_athlete? %> </p>
+    <%= link_to "Update #{athlete.name}", "/gyms/:gym_id/athletes/#{athlete.id}/edit" %>
+  </div>
+<% end %>
+<%= link_to "Add Athlete", "/gyms/#{@gym.id}/athletes/new" %>

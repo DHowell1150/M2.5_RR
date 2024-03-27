@@ -1,0 +1,7 @@
+<h1> Athlete </h1>
+
+<h3><%= @athlete.name %></h3>
+Age: <%= @athlete.age %><br>
+<%= @athlete.collegiate_athlete? %><br>
+
+<%= link_to 'Update Athlete', "/athletes/#{@athlete.id}/edit" %>
